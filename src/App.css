@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('components/wings.jpg');
+  background-attachment: fixed; /* Keeps the image fixed in the background */
+  animation: moveBackground 30s linear infinite; /* Applies the animation */
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+  background-color: #e1db26;
+  border-radius: 4px;
+}
+
+section {
+  padding: 20px;
+}
+
+.hidden-section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+/* Improved Auth Styling */
+.auth-container {
+  width: 350px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  color: #333;
+  text-align: center;
+}
+
+.auth-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="password"],
+.auth-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: burlywood;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: rgba(173, 135, 135, 0.801);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: burlywood;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgba(173, 135, 135, 0.801);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#userManagement h2 {
+  color: rgb(237, 224, 224); /* Set the text color to grey */
+}
+
+#productManagement h2 {
+  color: rgb(237, 224, 224); /* Set the text color to grey */
+}
+
+/* Styling the form inside #userManagement */
+#userManagement form {
+  width: 75%; /* Set the width to 3/4 of the page */
+  margin: auto 0; 
+}
+
+#productManagement form {
+  width: 75%; /* Set the width to 3/4 of the page */
+  margin: auto 0; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Styling the user table container */
+#userTable {
+  width: 75%; /* Set the width to 3/4 of the page */
+}
+
+/* Styling the products table container */
+#productTable {
+  width: 75%; /* Set the width to 3/4 of the page */
+}
+
